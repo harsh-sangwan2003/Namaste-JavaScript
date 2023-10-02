@@ -8,7 +8,8 @@ document.getElementById('parent').addEventListener("click",()=>{
     console.log("Parent");
 },true)
 
-document.getElementById('child').addEventListener("click",()=>{
+document.getElementById('child').addEventListener("click",(e)=>{
 
     console.log("Child");
+    e.stopPropagation();
 },true)
