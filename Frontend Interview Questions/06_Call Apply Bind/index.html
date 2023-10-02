@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event phases</title>
+
+    <script src="index.js" defer></script>
+
+    <style>
+
+       #grandparent{
+
+        height:500px;
+        width:500px;
+        background-color: lightcoral;
+       }
+
+       #parent{
+
+        height:400px;
+        width:400px;
+        background-color: lightblue;
+       }
+
+       #child{
+
+        height:300px;
+        width:300px;
+        background-color: lightgreen;
+       }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
