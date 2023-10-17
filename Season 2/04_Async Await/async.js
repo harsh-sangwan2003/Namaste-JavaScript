@@ -1,6 +1,12 @@
+// always returns a promise
+// async function getData(){
+
+//     return "Namaste";
+// }
+
 const p = new Promise((resolve, reject) => {
 
-    resolve('Promise resolved successfully');
+    resolve('Promise resolved value.');
 })
 
 async function getData() {
@@ -8,16 +14,8 @@ async function getData() {
     return p;
 }
 
-async function fn1() {
-
-    return 2;
-}
-
-let fn = fn1();
-console.log(fn);
-
-let data = getData();
-data.then(function (res) {
-
+const data = getData();
+console.log(data);
+data.then(res => {
     console.log(res);
 })
