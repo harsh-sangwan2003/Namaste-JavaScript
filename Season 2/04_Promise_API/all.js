@@ -36,5 +36,5 @@ const p3 = fn3();
 Promise.all([p1, p2, p3]).then(val => {
     console.log(val);
 }).catch(err => {
-    console.log(err);
+    console.log("Error ",err);
 })

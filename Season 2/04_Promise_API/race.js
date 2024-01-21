@@ -32,8 +32,8 @@ const p1 = fn1();
 const p2 = fn2();
 const p3 = fn3();
 
-// Resolve all promises and return an array of results and will not reject if any of the promises reject.
-Promise.allSettled([p1, p2, p3]).then(val => {
+// Resolve the promise that resolves or rejects first.
+Promise.race([p1, p2, p3]).then(val => {
     console.log(val);
 }).catch(err => {
     console.log("Error ",err);
