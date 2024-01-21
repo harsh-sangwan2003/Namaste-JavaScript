@@ -32,6 +32,7 @@ const p1 = fn1();
 const p2 = fn2();
 const p3 = fn3();
 
+// Resolve all promises and return an array of results and reject if any of the promises reject.
 Promise.all([p1, p2, p3]).then(val => {
     console.log(val);
 }).catch(err => {
